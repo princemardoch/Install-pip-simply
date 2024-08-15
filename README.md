@@ -55,11 +55,11 @@ Cela devrait afficher la version de pip installée sur votre système.
 
 ## Remarques
 
-- Si vous rencontrez des erreurs de permission lors de l'installation, vous devrez peut-être exécuter la commande avec `sudo` :
+Si vous rencontrez des erreurs de permission lors de l'installation, vous devrez peut-être exécuter la commande avec `sudo` :
   ```sh
   sudo python3 get-pip.py
   ```
-- Assurez-vous de maintenir pip à jour en utilisant régulièrement la commande :
+Assurez-vous de maintenir pip à jour en utilisant régulièrement la commande :
   ```sh
   pip install --upgrade pip
   ```
