@@ -1,65 +1,52 @@
-# Installation de pip
+# Installing pip
 
-Ce guide explique comment installer pip, le gestionnaire de paquets pour Python, en utilisant la méthode curl.
+This guide explains how to install pip, the package manager for Python, using the curl method.
 
-## Prérequis
+## Requirements
+- Python 3 installed on your system
+- Internet access
+- Terminal or command line
 
-- Python 3 installé sur votre système
-- Accès à Internet
-- Terminal ou ligne de commande
+## Installation Steps
 
-## Étapes d'installation
-
-1. Téléchargez le script d'installation de pip :
-
+1. Download the pip installation script:
    ```sh
    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
    ```
+   This command downloads the `get-pip.py` script from the official PyPA (Python Packaging Authority) website and saves it in your current directory.
 
-   Cette commande utilise `curl` pour télécharger le script `get-pip.py` depuis le site officiel de PyPA (Python Packaging Authority) et le sauvegarde dans votre répertoire courant.
-
-2. Exécutez le script avec Python :
-
+2. Run the script with Python:
    ```sh
    python3 get-pip.py
    ```
+   This command runs the downloaded script, which will install pip on your system.
 
-   Cette commande exécute le script téléchargé, qui installera pip sur votre système.
+## Detailed Explanation
 
-## Explication détaillée
+### Step 1: Downloading the Script
+We use the `curl` command to download files from the internet. In this case:
+- `https://bootstrap.pypa.io/get-pip.py` is the URL of the pip installation script.
+- `-o get-pip.py` tells curl to save the downloaded file as `get-pip.py` in the current directory.
 
-### Étape 1 : Téléchargement du script
+### Step 2: Running the Script
+`python3 get-pip.py` starts the Python 3 interpreter and runs the `get-pip.py` script. This script:
+1. Checks your Python environment
+2. Downloads the latest version of pip
+3. Installs pip on your system
 
-La commande `curl` est utilisée pour télécharger des fichiers depuis Internet. Dans notre cas :
-
-- `https://bootstrap.pypa.io/get-pip.py` est l'URL du script d'installation de pip.
-- `-o get-pip.py` indique à curl de sauvegarder le fichier téléchargé sous le nom `get-pip.py` dans le répertoire courant.
-
-### Étape 2 : Exécution du script
-
-`python3 get-pip.py` lance l'interpréteur Python 3 et exécute le script `get-pip.py`. Ce script :
-
-1. Vérifie votre environnement Python
-2. Télécharge la dernière version de pip
-3. Installe pip sur votre système
-
-## Vérification de l'installation
-
-Après l'installation, vous pouvez vérifier que pip est correctement installé en exécutant :
-
+## Checking the Installation
+After installation, you can check if pip is correctly installed by running:
 ```sh
 pip --version
 ```
+This should display the version of pip installed on your system.
 
-Cela devrait afficher la version de pip installée sur votre système.
-
-## Remarques
-
-Si vous rencontrez des erreurs de permission lors de l'installation, vous devrez peut-être exécuter la commande avec `sudo` :
+## Notes
+If you encounter permission errors during installation, you may need to run the command with `sudo`:
   ```sh
   sudo python3 get-pip.py
   ```
-Assurez-vous de maintenir pip à jour en utilisant régulièrement la commande :
+Make sure to keep pip up to date by regularly using the command:
   ```sh
   pip install --upgrade pip
   ```
