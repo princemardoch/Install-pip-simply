@@ -11,9 +11,19 @@ Ce guide explique comment installer pip, le gestionnaire de paquets pour Python,
 ## Étapes d'installation
 
 1. Téléchargez le script d'installation de pip :
+
+   ```sh
+   curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+   ```
+
    Cette commande utilise `curl` pour télécharger le script `get-pip.py` depuis le site officiel de PyPA (Python Packaging Authority) et le sauvegarde dans votre répertoire courant.
 
 2. Exécutez le script avec Python :
+
+   ```sh
+   python3 get-pip.py
+   ```
+
    Cette commande exécute le script téléchargé, qui installera pip sur votre système.
 
 ## Explication détaillée
@@ -36,8 +46,20 @@ La commande `curl` est utilisée pour télécharger des fichiers depuis Internet
 ## Vérification de l'installation
 
 Après l'installation, vous pouvez vérifier que pip est correctement installé en exécutant :
+
+```sh
+pip --version
+```
+
 Cela devrait afficher la version de pip installée sur votre système.
 
 ## Remarques
 
 - Si vous rencontrez des erreurs de permission lors de l'installation, vous devrez peut-être exécuter la commande avec `sudo` :
+  ```sh
+  sudo python3 get-pip.py
+  ```
+- Assurez-vous de maintenir pip à jour en utilisant régulièrement la commande :
+  ```sh
+  pip install --upgrade pip
+  ```
